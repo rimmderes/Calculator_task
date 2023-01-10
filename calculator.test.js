@@ -103,7 +103,7 @@ describe('modulus', () => {
     expect(actual).toBe(expected);
   });
 
-  test('can divide negative integers', () => {
+  test('can find modulus of negative integers', () => {
     const expected = -1;
     const actual = calculator.modulus(-11, -2);
     expect(actual).toBe(expected);
@@ -112,9 +112,19 @@ describe('modulus', () => {
 });
 
 describe('even', () => {
-
+  test('can find if a number is even', () => {
+    const expected = true;
+    const actual = calculator.even(2);
+    expect(actual).toBe(expected);
+  });
 });
 
 describe('odd', () => {
+
+  test('can find if a number is odd', () => {
+    const expected = true;
+    const actual = calculator.odd(9);
+    expect(actual).toBe(expected);
+  });
 
 });

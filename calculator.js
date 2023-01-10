@@ -14,26 +14,14 @@ const Calculator = function() {
     this.modulus = function(a, b){
         return a % b;
     }
-    this.even = function(a){
+    this.even = function(a){ 
         if (a % 2 === 0)
-        return "This number is even";
-    }
+        return true;
+     }
     this.odd = function(a){
-        if (a % 2 === !0)
-        return "This number is odd";
+        if (a % 2 !== 0)
+        return true;
     }
 }
-
-// const subtract = null;
-
-// const multiply = null;
-
-// const divide = null;
-
-// const modulus = null;
-
-// const even = null;
-
-// const odd = null;
 
 module.exports = {Calculator};
