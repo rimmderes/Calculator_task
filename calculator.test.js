@@ -65,9 +65,33 @@ describe('subtract', () => {
 
 describe('multiply', () => {
 
+  test('can multiple positive integer', () => {
+    const expected = 96;
+    const actual = calculator.multiply(12, 8);
+    expect(actual).toBe(expected);
+  });
+
+  test('can multiple negative integers', () => {
+    const expected = 49;
+    const actual = calculator.multiply(-7, -7);
+    expect(actual).toBe(expected);
+  });
+
 });
 
 describe('divide', () => {
+
+  test('can divide positive integer', () => {
+    const expected = 30;
+    const actual = calculator.divide(90, 3);
+    expect(actual).toBe(expected);
+  });
+
+  test('can divide negative integers', () => {
+    const expected = 3;
+    const actual = calculator.divide(-15, -5);
+    expect(actual).toBe(expected);
+  });
 
 });
 
