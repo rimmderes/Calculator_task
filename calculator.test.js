@@ -97,6 +97,18 @@ describe('divide', () => {
 
 describe('modulus', () => {
 
+  test('can find the modulus of two positive', () => {
+    const expected = 1;
+    const actual = calculator.modulus(9, 2);
+    expect(actual).toBe(expected);
+  });
+
+  test('can divide negative integers', () => {
+    const expected = -1;
+    const actual = calculator.modulus(-11, -2);
+    expect(actual).toBe(expected);
+
+});
 });
 
 describe('even', () => {
