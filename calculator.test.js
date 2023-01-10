@@ -37,6 +37,30 @@ describe('sum', () => {
 
 describe('subtract', () => {
 
+  test('can subtract two small positive numbers', () => {
+    const expected = 10;
+    const actual = calculator.subtract(25, 15);
+    expect(actual).toBe(expected);
+  });
+
+  test('can subtract two large positive numbers', () => { 
+    const expected = 789;
+    const actual = calculator.subtract(1286, 497);
+    expect(actual).toBe(expected);
+  });
+
+  test('can subtract two negative numbers', () => {
+    const expected = -76;
+    const actual = calculator.subtract(-123, -47);
+    expect(actual).toBe(expected);
+  });
+
+  test('can subtract zero', () => {
+    const expected = 67;
+    const actual = calculator.subtract(67, 0);
+    expect(actual).toBe(expected);
+});
+
 });
 
 describe('multiply', () => {
